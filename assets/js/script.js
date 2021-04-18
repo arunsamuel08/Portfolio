@@ -31,7 +31,7 @@ TypeWriter.prototype.type = function(){
 
 
   // Initial Type Speed
-  let typeSpeed = 300;
+  let typeSpeed = 150;
 
   if(this.isDeleting) {
     typeSpeed /= 2;
@@ -48,7 +48,7 @@ TypeWriter.prototype.type = function(){
     // move to next word
     this.wordIndex++;
     // pause before start typing
-    typeSpeed = 500
+    typeSpeed = 300
   }
   setTimeout(() => this.type(), typeSpeed);
 }
