@@ -119,10 +119,10 @@ span{
   letter-spacing: 1px;
   text-decoration: none;
   background-color: #1A1A1D;
-  top: 65%;
-  left: 22.5%;
+  top: 120%;
+  left: 33%;
   border-color: #fff;
-  padding: 4px 9px;
+  padding: 4px 12px;
   box-shadow: 1px 9px 12px rgba(0, 0, 0, 1);
 }
 
@@ -133,3 +133,4 @@ span{
   transform: scale(0.98);
 }
 
+/* ======================= MEDIA QUERY ============================*/
