@@ -77,3 +77,8 @@ span{
   font-weight: 900;
 }
 
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #66FCF1;
+}
+
