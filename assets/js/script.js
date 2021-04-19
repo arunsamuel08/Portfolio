@@ -1,3 +1,4 @@
+// ==================== TYPEWRITER EFFECT ==================================
 const TypeWriter = function(txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
   this.words = words;
@@ -64,3 +65,6 @@ function init() {
   //Init typewriter
   new TypeWriter(txtElement, words, wait);
 }
+
+// ========================================================================================
+
