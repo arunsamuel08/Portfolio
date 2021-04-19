@@ -22,6 +22,7 @@ html, body{
   width: 100%;
   background-color: #1A1A1D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 11;
 }
 
 .logo{
@@ -88,8 +89,8 @@ html, body{
 
 .menu-wrap .toggler {
   position: absolute;
-  top: 0.8%;
-  left: 95%;
+  top: 0;
+  left: 83%;
   z-index: 2;
   cursor: pointer;
   width: 50px;
@@ -100,10 +101,10 @@ html, body{
 .menu-wrap .hamburger{
   position: absolute;
   top: 0;
-  left: 95%;
+  left: 83%;
   z-index: 1;
   width: 60px;
-  height: 60px;
+  height: 55px;
   padding: 1rem;
   background: #1A1A1D;
   display: flex;
@@ -171,7 +172,7 @@ html, body{
   padding: 10px;
 }
 
-span{
+.home_title span{
   color: #66FCF1;
   font-size: larger;
   font-weight: 900;
@@ -189,14 +190,15 @@ span{
   color: #fff;
   font-size: 21px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-decoration: none;
   background-color: #1A1A1D;
   top: 120%;
   left: 33%;
   border-width: 1px;
   border-color: #fff;
-  padding: 4px 12px;
+  border-radius: 4px;
+  padding: 6px 15px;
   box-shadow: 1px 9px 12px rgba(0, 0, 0, 1);
 }
 
@@ -221,7 +223,31 @@ span{
     top: 3px;
   }
 
+  .home_title{
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .btn{
+    justify-content: center;
+    top: 150%;
+    left: 29%;
+  }
+
+
+
+  
+
   .menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  .menu.active{
+    left: 0;
   }
 }
