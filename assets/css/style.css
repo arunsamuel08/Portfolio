@@ -226,7 +226,6 @@ html, body{
   .home_title{
     display: flex;
     flex-direction: column;
-    left: 10%;
     font-size: 30px;
     margin: auto;
     padding: 5px;
