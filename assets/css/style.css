@@ -156,16 +156,21 @@ html, body{
   transform: rotate(225deg);
 }
 /* =================== HOME PAGE ==============================*/
+.home{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .home_title{
-  position: absolute;
-  font-family: "Roboto", sans-serif;
-  top: 32%;
-  left: 12%;
   font-size: 40px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding: 10px;
+  align-items: center;
+  margin-right: 50%;
 }
 
 .home_title h2{
@@ -186,7 +191,6 @@ html, body{
 
 /* Button */
 .btn {
-  position: absolute;
   cursor: pointer;
   color: #fff;
   font-size: 21px;
@@ -194,8 +198,6 @@ html, body{
   letter-spacing: 2px;
   text-decoration: none;
   background-color: #1A1A1D;
-  top: 120%;
-  left: 33%;
   border-width: 1px;
   border-color: #fff;
   border-radius: 4px;
