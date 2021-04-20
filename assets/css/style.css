@@ -223,6 +223,11 @@ html, body{
     top: 3px;
   }
 
+  .home {
+    justify-content: center;
+    text-align: center;
+  }
+
   .home_title{
     font-size: 30px;
     padding: 5px;
@@ -233,11 +238,7 @@ html, body{
     top: 150%;
     left: 29%;
   }
-
-
-
   
-
   .menu {
     position: fixed;
     top: 0;
