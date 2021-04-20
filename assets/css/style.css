@@ -224,16 +224,14 @@ html, body{
   }
 
   .home_title{
+    display: flex;
+    flex-direction: column;
     left: 10%;
     font-size: 30px;
+    margin: auto;
     padding: 5px;
     justify-content: center;
-  }
-
-  .btn{
-    justify-content: center;
-    top: 150%;
-    left: 29%;
+    text-align: center;
   }
   
   .menu {
@@ -244,6 +242,10 @@ html, body{
     height: 100%;
     background-color: #1A1A1D;
     z-index: 11;
+  }
+
+  .btn{
+    left: 27%;
   }
 
   .menu.active{
