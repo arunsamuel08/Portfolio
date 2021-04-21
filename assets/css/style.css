@@ -267,6 +267,7 @@ html, body{
     place-items: center;
     margin: auto;
     z-index: 11;
+    transition: 0.7s;
   }
 
   .menu .nav_links{
