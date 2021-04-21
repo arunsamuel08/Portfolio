@@ -66,9 +66,18 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-// ========================================================================================
+// ====================== To keep NAV Bar in place ====================================================
 
 window.addEventListener("scroll", function(){
   var nav = document.querySelector("nav");
   nav.classList.toggle("sticky", window.scrollY > 0)
+})
+
+// ==================== Mobile view hamburger open ======================
+
+const toggle = document.querySelector('.toggler')
+const menu = document.querySelector('.menu')
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active')
 })
