@@ -11,6 +11,7 @@ html, body{
   height: 100vh;
   color: black;
   background-color: #1A1A1D;
+  scroll-behavior: smooth;
   
 }
 /* =============NAVIGATION BAR DESKTOP ===========================*/
@@ -164,6 +165,12 @@ html, body{
   align-items: center;
 }
 
+.home svg{
+  position: absolute;
+  left: 50%;
+  margin: 6%;
+}
+
 .home_title{
   font-size: 40px;
   display: flex;
@@ -218,6 +225,10 @@ html, body{
 /* ========================== MEDIA QUERIES =======================*/
 
 @media(max-width: 768px){
+  svg{
+    display: none;
+  }
+
   .toggle{
     display: block;
   }
