@@ -12,6 +12,7 @@ html, body{
   color: black;
   background-color: #1A1A1D;
   scroll-behavior: smooth;
+  overflow: hidden;
   
 }
 /* =============NAVIGATION BAR DESKTOP ===========================*/
