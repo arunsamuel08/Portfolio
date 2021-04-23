@@ -221,6 +221,136 @@ html, body{
   border-color:  #66FCF1;
   font-weight: 500;
 }
+/* ========================== SVG ANIMATIONS ======================*/
+
+#Molecule1{
+  animation: molecule 15s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+
+}
+
+@keyframes molecule {
+  from{
+    transform: rotateZ(0deg);
+  }
+
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+#Molecule2{
+  animation: molecules 15s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes molecules {
+  from{
+    transform: rotateZ(360deg);
+  }
+
+  to{
+    transform: rotateZ(0deg);
+  }
+}
+
+#Gear1{
+  animation: gear 5s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+
+}
+
+@keyframes gear{
+  from{
+    transform: rotateZ(0deg);
+  }
+
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+#Gear2{
+  animation: gear1 5s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes gear1{
+  from{
+    transform: rotateZ(360deg);
+  }
+
+  to{
+    transform: rotateZ(0deg);
+  }
+}
+
+#Micro{
+  animation: micro 2s infinite alternate;
+
+}
+
+@keyframes micro{
+  0%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(-5px);
+  }
+}
+
+#Arm{
+  animation: arm 3s infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes arm{
+  0%{
+    transform: rotate(-5deg);
+  }
+
+  70%{
+    transform: rotate(2deg);
+  }
+}
+
+#Leaf1{
+  animation: leaf 1s infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes leaf{
+  0%{
+    transform: rotate(-10);
+  }
+
+  70%{
+    transform: rotate(1deg);
+  }
+}
+
+#Leaf2{
+  animation: leaf2 2s infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes leaf2{
+  0%{
+    transform: rotate(-2);
+  }
+
+  70%{
+    transform: rotate(2deg);
+  }
+}
 
 /* ========================== MEDIA QUERIES =======================*/
 
