@@ -225,6 +225,97 @@ html, body{
   border-color:  var(--secondary-color);
   font-weight: 500;
 }
+
+.social-media{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 17.5%;
+  top: 75%;
+}
+
+.card1{
+  margin: 18px;
+  height: 70px;
+  width: 55px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 12.5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+}
+.card1 .image{
+  padding: 5px;
+  
+}
+
+.card1 .image img{
+  height: 30px;
+  width: 30px;
+  transform: translateZ(5px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card2{
+  margin: 18px;
+  height: 70px;
+  width: 55px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 12.5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+}
+
+.card2 .image{
+  padding: 5px;
+  
+}
+
+.card2 .image img{
+  height: 40px;
+  width: 40px;
+  transform: translateZ(5px);
+}
+
+.card3{
+  margin: 18px;
+  height: 70px;
+  width: 55px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 12.5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+}
+
+.card3 .image{
+  padding: 5px;
+  
+}
+
+.card3 .image img{
+  height: 30px;
+  width: 30px;
+  transform: translateZ(5px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
 /* ========================== SVG ANIMATIONS ======================*/
 
 #Molecule1{
@@ -432,5 +523,9 @@ html, body{
   .menu.active{
     left: 0;
     transition: 0.7s;
+  }
+
+  .social-media{
+    left: 13%;
   }
 }

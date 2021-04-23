@@ -261,6 +261,23 @@
         </g>
         </g>
       </svg>
+      <div class="social-media">
+        <div class="card1">
+          <div class="image">
+            <a href="https://www.linkedin.com/in/arunsamuel08/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn Profile"></a>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="image">
+            <a href="https://github.com/arunsamuel08" target="_blank"><img src="assets/images/github.png" alt="LinkedIn Profile"></a>
+          </div>
+        </div>
+        <div class="card3">
+          <div class="image">
+            <a href="https://www.instagram.com/arun.samuel08/" target="_blank"><img src="assets/images/instagram.png" alt="LinkedIn Profile"></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="about" id="about"></section>
@@ -271,5 +288,29 @@
   
   
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card1"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+
+    VanillaTilt.init(document.querySelector(".card2"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+
+    VanillaTilt.init(document.querySelector(".card3"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1
+    });
+    
+  </script>
 </body>
 </html>
