@@ -165,6 +165,7 @@ html, body{
   width: 100vw;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -182,6 +183,7 @@ html, body{
   justify-content: center;
   align-items: center;
   margin-right: 45%;
+  margin-top: 6%;
 }
 
 .home_title h2{
@@ -227,12 +229,12 @@ html, body{
 }
 
 .social-media{
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  left: 17.5%;
-  top: 75%;
+  margin-right: 45%;
+  margin-top: 3%;
 }
+
 
 .card1{
   margin: 18px;
@@ -525,7 +527,14 @@ html, body{
     transition: 0.7s;
   }
 
-  .social-media{
-    left: 13%;
+  .home .home_title{
+    margin-top: 25%;
+    margin-bottom: 5%;
+  }
+
+  .home .social-media{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25%;
   }
 }
