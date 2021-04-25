@@ -336,14 +336,6 @@ html, body{
   letter-spacing: 4px;
 }
 
-.about .background h2{
-  text-align: center;
-  padding: 6%;
-  font-size: 300px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-
 /* ========================== SVG ANIMATIONS ======================*/
 
 #Molecule1{
