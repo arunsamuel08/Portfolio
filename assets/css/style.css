@@ -336,6 +336,39 @@ html, body{
   letter-spacing: 4px;
 }
 
+/* ========================= PROJECTS ============================= */
+.projects{
+  height: 100vh;
+  padding-top: 6%;
+}
+
+.projects .heading h1{
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.projects .heading h1:hover{
+  letter-spacing: 4px;
+}
+
+/* ========================= CONTACTS ============================= */
+.contacts{
+  height: 100vh;
+  padding-top: 6%;
+}
+
+.contacts .heading h1{
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.contacts .heading h1:hover{
+  letter-spacing: 4px;
+}
 /* ========================== SVG ANIMATIONS ======================*/
 
 #Molecule1{
