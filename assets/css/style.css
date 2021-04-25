@@ -322,16 +322,25 @@ html, body{
 /* ========================== ABOUT PAGE ========================== */
 .about{
   height: 100vh;
+  padding-top: 6%;
 }
 
 .about .heading h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   color: var(--secondary-color);
-  font-size: 150px;
-  margin: 10%;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.about .heading h1:hover{
+  letter-spacing: 4px;
+}
+
+.about .background h2{
+  text-align: center;
+  padding: 6%;
+  font-size: 300px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
