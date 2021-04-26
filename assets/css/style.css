@@ -72,7 +72,7 @@ html, body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -4px;
   width: 100%;
   height: 2px;
   background: #66FCF1;
@@ -337,7 +337,7 @@ html, body{
 
 .about .heading h1{
   text-align: center;
-  color: var(--secondary-color);
+  color: #fff;
   font-size: 30px;
   transition: 0.5s;
 }
@@ -354,7 +354,7 @@ html, body{
 
 .projects .heading h1{
   text-align: center;
-  color: var(--secondary-color);
+  color: #fff;
   font-size: 30px;
   transition: 0.5s;
 }
@@ -371,7 +371,7 @@ html, body{
 
 .contacts .heading h1{
   text-align: center;
-  color: var(--secondary-color);
+  color: #fff;
   font-size: 30px;
   transition: 0.5s;
 }
