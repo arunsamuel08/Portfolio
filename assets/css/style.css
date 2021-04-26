@@ -16,7 +16,7 @@ html, body{
   color: black;
   background-color: var(--primary-color);
   scroll-behavior: smooth;  
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /* =============NAVIGATION BAR DESKTOP ===========================*/
 
@@ -160,7 +160,17 @@ html, body{
   transform: rotate(225deg);
 }
 
-/* =================== HOME PAGE ==============================*/
+/* =================== SCROLLBAR ============================== */
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+  border-radius: 6px;
+}
+
+/* =================== HOME PAGE ============================== */
 .home{
   position: relative;
   width: 100vw;
