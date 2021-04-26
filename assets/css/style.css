@@ -162,7 +162,7 @@ html, body{
 
 /* =================== SCROLLBAR ============================== */
 ::-webkit-scrollbar{
-  width: 12px;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -597,6 +597,10 @@ html, body{
     margin: 0;
     padding: 0;
     margin-bottom: 25%;
+  }
+
+  ::-webkit-scrollbar{
+    width: 4px;
   }
 
 }
