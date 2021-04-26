@@ -555,7 +555,6 @@ html, body{
   .menu {
     position: fixed;
     min-height: 100vh;
-    
     left: 100%;
     width: 100%;
     height: 100%;
@@ -603,4 +602,15 @@ html, body{
     width: 4px;
   }
 
+  .about{
+    padding-top: 18%;
+  }
+
+  .projects{
+    padding-top: 18%;
+  }
+
+  .contacts{
+    padding-top: 18%;
+  }
 }
