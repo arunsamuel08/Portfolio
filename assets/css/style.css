@@ -217,16 +217,15 @@ html, body{
 /* Button */
 .btn {
   cursor: pointer;
-  color: #fff;
+  color: var(--primary-color);
   width: 150px;
   font-size: 22px;
   font-weight: 500;
   font-weight: 500;
-  border-color: var(--secondary-color);
-  border-width: 1px;
-  outline: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
   border-radius: 40px;
-  background-color: var(--primary-color);
   padding: 6px 15px;
   transition: 0.3s;
 }
@@ -234,7 +233,7 @@ html, body{
 .btn:hover{
   box-shadow: inset 150px 0 0 0 var(--secondary-color) ;
   cursor: pointer;
-  color: #000;
+  color: var(--primary-color);
   border-color:  var(--secondary-color);
   font-weight: 500;
 }
@@ -331,7 +330,7 @@ html, body{
 
 /* ========================== ABOUT PAGE ========================== */
 .about{
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
 }
@@ -351,37 +350,64 @@ html, body{
 .about .abt-cont{
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
+.about .abt-cont .profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9%;
+}
+
+.about .abt-cont .profile a{
+  color: #fff;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  border-radius: 40px;
+  box-shadow: 0 0 5px 5px var(--secondary-color);
+  transition: 0.5s;
+}
+
+.about .abt-cont .profile a:hover{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 5px 5px var(--primary-color);
+}
+
 .about .abt-cont .box1{
-  height: 80%;
-  width: 40%;
+  height: 100%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 3%;
   border-radius: 15px;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.55);
 }
 
 .about .abt-cont .box1 h1{
   padding: 2%;
-  padding-left: 5%;
+  padding-left: 6%;
   color: var(--secondary-color);
 }
 
-.about .abt-cont .box2{
-  height: 80%;
-  width: 40%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 3%;
-  border-radius: 15px;
-}
-
-.about .abt-cont .box2 h1{
+.about .abt-cont .box1 h3{
   padding: 2%;
-  padding-left: 5%;
-  color: var(--secondary-color);
+  padding-left: 6%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.about .abt-cont .box1 p{
+  padding: 2%;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: #fff;
+  font-size: large;
+  
 }
 
 /* ========================= PROJECTS ============================= */
@@ -419,6 +445,7 @@ html, body{
 }
 /* ========================== SVG ANIMATIONS ======================*/
 
+/* Home page animations */
 #Molecule1{
   animation: molecule 15s linear infinite;
   transform-origin: center;
@@ -539,7 +566,7 @@ html, body{
 
 @keyframes leaf2{
   0%{
-    transform: rotate(-2);
+    transform: rotate(-2deg);
   }
 
   70%{
@@ -547,7 +574,57 @@ html, body{
   }
 }
 
+#Foot{
+  animation: foot 0.5s infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
 
+@keyframes foot{
+  0%{
+    transform: rotate(-2deg);
+  }
+
+  70%{
+    transform: rotate(2deg);
+  }
+}
+
+#MoveArm{
+  animation: movearm 2s infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+@keyframes movearm{
+  0%{
+    transform: rotate(-20deg);
+  }
+
+  70%{
+    transform: rotate(0deg);
+  }
+}
+
+#Magnify{
+  animation: magnify 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box
+}
+
+@keyframes magnify{
+  from{
+    transform: rotateY(0deg);
+  }
+
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+#Vector_83, #Vector_88, #Vector_50, #Vector_52, #Vector_79, #Vector_78, #Vector_77{
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.9));
+}
 /* ========================== MEDIA QUERIES =======================*/
 
 @media(max-width: 768px){
