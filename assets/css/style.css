@@ -360,9 +360,16 @@ html, body{
   justify-content: center;
   align-items: center;
   margin-bottom: 9%;
+  margin-top: 9%;
+}
+
+.about .abt-cont .profile svg{
+  height: 120%;
+  width: 120%;
 }
 
 .about .abt-cont .profile a{
+  margin-top: 20%;
   color: #fff;
   padding: 17px;
   text-decoration: none;
@@ -408,7 +415,6 @@ html, body{
   padding-right: 6%;
   color: #fff;
   font-size: large;
-  
 }
 
 /* ========================= PROJECTS ============================= */
@@ -574,10 +580,9 @@ html, body{
     transform: rotate(2deg);
   }
 }
-
 #Foot{
-  animation: foot 0.5s infinite alternate;
-  transform-origin: right;
+  animation: foot 1s infinite alternate;
+  transform-origin: left;
   transform-box: fill-box;
 }
 
@@ -591,40 +596,23 @@ html, body{
   }
 }
 
-#MoveArm{
-  animation: movearm 2s infinite alternate;
-  transform-origin: right;
+#Vector_5, #Vector_8{
+  fill: #3d4dbd;
+}
+
+#code{
+  animation: code 1s infinite linear alternate;
+  transform-origin: left;
   transform-box: fill-box;
 }
 
-@keyframes movearm{
+@keyframes code{
   0%{
-    transform: rotate(-20deg);
+    transform: translateX(0px);
   }
-
-  70%{
-    transform: rotate(0deg);
+  100%{
+    transform: translateX(10px);
   }
-}
-
-#Magnify{
-  animation: magnify 2s linear infinite;
-  transform-origin: center;
-  transform-box: fill-box
-}
-
-@keyframes magnify{
-  from{
-    transform: rotateY(0deg);
-  }
-
-  to{
-    transform: rotateY(360deg);
-  }
-}
-
-#Vector_83, #Vector_88, #Vector_50, #Vector_52, #Vector_79, #Vector_78, #Vector_77{
-  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.9));
 }
 /* ========================== MEDIA QUERIES =======================*/
 
@@ -728,5 +716,38 @@ html, body{
 
   .contacts{
     padding-top: 18%;
+  }
+
+  /* ================ About mobile view =================*/
+  .about .abt-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  .about .abt-cont .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .abt-cont .profile svg{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .abt-cont .box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    padding: 2%;
   }
 }
