@@ -417,6 +417,40 @@ html, body{
   font-size: large;
 }
 
+.about .abt-cont .box1 .skills{
+  display: flex;
+  padding: 5px 6% 5px 6%;
+  justify-content: space-between;
+}
+
+.about .abt-cont .box1 .skills .development{
+  display: flex;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  height: 45%;
+  width: 45%;
+  justify-content: center;
+}
+
+.about .abt-cont .box1 .skills .development h4{
+  color: #fff;
+  padding: 2%;
+}
+
+.about .abt-cont .box1 .skills .libraries{
+  display: flex;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  height: 45%;
+  width: 45%;
+  justify-content: center;
+}
+
+.about .abt-cont .box1 .skills .libraries h4{
+  color: #fff;
+  padding: 2%;
+}
+
 /* ========================= PROJECTS ============================= */
 .projects{
   height: 100vh;
