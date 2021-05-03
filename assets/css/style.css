@@ -232,7 +232,7 @@ html, body{
 }
 
 .btn:hover{
-  box-shadow: inset 150px 0 0 0 var(--secondary-color) ;
+  box-shadow: inset 150px 0 0px 0px var(--secondary-color) ;
   cursor: pointer;
   color: var(--primary-color);
   border-color:  var(--secondary-color);
@@ -272,6 +272,15 @@ html, body{
   width: 30px;
   transform: translateZ(5px);
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.card1 .image img:hover{
+  fill: #fff;
+  height: 35px;
+  width: 35px;
+  transform: translateZ(5px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .card2{
@@ -296,6 +305,13 @@ html, body{
 }
 
 .card2 .image img{
+  height: 35px;
+  width: 35px;
+  transform: translateZ(5px);
+  transition: 0.5s;
+}
+
+.card2 .image img:hover{
   height: 40px;
   width: 40px;
   transform: translateZ(5px);
@@ -327,6 +343,14 @@ html, body{
   width: 30px;
   transform: translateZ(5px);
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.card3 .image img:hover{
+  height: 35px;
+  width: 35px;
+  transform: translateZ(5px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* ========================== ABOUT PAGE ========================== */
@@ -337,104 +361,51 @@ html, body{
 }
 
 .about .heading h1{
-  margin-top: 6%;
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  transition: 0.5s;
+  margin-top: 7%;
+  margin-left: 10%;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  writing-mode:vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
 }
 
-.about .heading h1:hover{
-  letter-spacing: 4px;
-}
-
-.about .abt-cont{
+.about .profile{
+  position: relative;
   display: flex;
-  justify-content: center;
-  height: 100vh;
-}
-
-.about .abt-cont .profile{
-  display: flex;
-  flex-direction: column;
+  top: 20%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12%;
-  margin-top: 4%;
 }
 
-.about .abt-cont .profile svg{
-  height: 100%;
-  width: 100%;
+.about .profile img{
+  position: absolute;
+  height: 240px;
+  width: 220px;
+  top: 2%;
+  left: 35%;
+  z-index: 4;
 }
 
-.about .abt-cont .profile a{
-  margin-top: 20%;
+.about .profile h1{
+  position: absolute;
+  margin-bottom: 7%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
   color: #fff;
-  padding: 17px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 700;
-  background-color: var(--primary-color);
-  border-radius: 40px;
-  box-shadow: 0 0 5px 5px var(--secondary-color);
-  transition: 0.5s;
+  font-weight: 500;
+  letter-spacing: 2px;
+  z-index: 5;
 }
 
-.about .abt-cont .profile a:hover{
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  box-shadow: 0 0 5px 5px var(--primary-color);
+.about .profile h1 span:nth-last-of-type(1){
+  margin-left: 50%;
 }
-
-.about .abt-cont .box1{
-  height: 50%;
-  width: 45%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 3%;
-  margin-top: 8%;
-  border-radius: 15px;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.55);
-}
-
-.about .abt-cont .box1 h1{
-  padding: 2%;
-  padding-left: 6%;
-  color: var(--secondary-color);
-}
-
-.about .abt-cont .box1 h3{
-  padding: 2%;
-  padding-left: 6%;
-  color: #fff;
-  font-weight: 700;
-}
-
-.about .abt-cont .box1 p{
-  padding: 2%;
-  padding-left: 6%;
-  padding-right: 6%;
-  color: #fff;
-  font-size: large;
-}
-
-/* ========================= SKILLS ============================= */
-.skills{
-  height: 100vh;
-  padding-top: 6%;
-}
-
-.skills .heading h1{
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  transition: 0.5s;
-}
-
-.skills .heading h1:hover{
-  letter-spacing: 4px;
-}
-
 
 /* ========================= PROJECTS ============================= */
 .projects{
@@ -443,14 +414,16 @@ html, body{
 }
 
 .projects .heading h1{
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  transition: 0.5s;
-}
-
-.projects .heading h1:hover{
-  letter-spacing: 4px;
+  margin-top: 7%;
+  margin-left: 10%;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  writing-mode:vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
 }
 
 /* ========================= CONTACTS ============================= */
@@ -460,16 +433,22 @@ html, body{
 }
 
 .contacts .heading h1{
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  transition: 0.5s;
+  margin-top: 7%;
+  margin-left: 10%;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  writing-mode:vertical-rl;
+  text-orientation: sideways;
+  transform: rotate(180deg);
 }
 
-.contacts .heading h1:hover{
-  letter-spacing: 4px;
-}
 /* ========================== SVG ANIMATIONS ======================*/
+#Vector2{
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 1));
+}
 
 /* Home page animations */
 #Molecule1{
@@ -738,39 +717,30 @@ html, body{
   }
 
   /* ================ About mobile view =================*/
+
   .about{
-    height: 130vh;
-  }
-
-  .about .abt-cont{
+    height: 200vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
   }
 
-  .about .abt-cont .profile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .about .profile{
+    top: 10%;
+    margin-left: 5%;
   }
 
-  .about .abt-cont .profile svg{
-    display: flex;
-    height: 80%;
-    width: 80%;
-    margin-top: 30%;
-    justify-content: center;
-    align-items: center;
+  .about .profile h1{
+    font-size: 30px;
   }
 
-  .about .abt-cont .box1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    padding: 2%;
+  .about .profile img{
+    margin-top: 25%;
+    margin-right: 10%;
   }
+
+  .about .profile h1 span:nth-last-of-type(1){
+    margin-left: 0;
+  }
+
+
 }
