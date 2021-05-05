@@ -77,7 +77,15 @@ window.addEventListener("scroll", function(){
 
 const toggle = document.querySelector('.toggler')
 const menu = document.querySelector('.menu')
+const navlinks = document.querySelector('.nav_links')
 
 toggle.addEventListener('click', () => {
   menu.classList.toggle('active')
 })
+
+navlinks.addEventListener('click', () => {
+  menu.classList.remove('active')
+})
+
+// ========================================================================
+
