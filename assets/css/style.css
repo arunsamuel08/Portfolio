@@ -409,6 +409,7 @@ html, body{
 .about .profile img{
   height: 240px;
   width: 220px;
+  filter: drop-shadow(0 6px 6px rgba(0,0,0,0.6));
   z-index: 4;
 }
 
@@ -705,7 +706,7 @@ html, body{
   .menu.active{
     right: 0;
   }
-  
+
   .menu span{
     position: absolute;
     top: 0;
