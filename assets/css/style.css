@@ -357,7 +357,7 @@ html, body{
 
 /* ========================== ABOUT PAGE ========================== */
 .about{
-  height: 100vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
 }
@@ -398,9 +398,26 @@ html, body{
   margin-left: 50%;
 }
 
-.about .profile .img-btn{
+.about .profile hr{
+  margin-top: 1%;
+  margin-left: 50%;
+  width: 50%;
+}
+
+.about .profile .para{
   display: flex;
-  margin-right: 14%;
+  margin-left: 14%;
+}
+
+.about .profile .para p{
+  margin-left: 5%;
+  margin-top: 19%;
+  text-align: justify;
+  color: #fff;
+}
+
+.about .profile .para .img-btn{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
