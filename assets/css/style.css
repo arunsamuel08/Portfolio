@@ -407,6 +407,7 @@ html, body{
 .about .profile .para{
   display: flex;
   margin-left: 14%;
+  width: 40%;
 }
 
 .about .profile .para p{
@@ -841,8 +842,7 @@ html, body{
   }
 
   .about .profile .img-btn{
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-top: 20%;
   }
 
   .about .profile h1{
@@ -852,6 +852,29 @@ html, body{
   .about .profile h1 span:nth-last-of-type(1){
     margin-left: 0;
   }
+
+  .about .profile hr{
+   display: none;
+  }
+
+  .about .profile .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .about .profile .para p{
+    margin: 0;
+    font-size: 17px;
+    word-spacing: 2px;
+    margin-top: 10%;
+    width: 180%;
+    text-align: center;
+  }
+
+
 
 
 }
