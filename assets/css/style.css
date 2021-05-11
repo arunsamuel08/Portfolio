@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-  --primary-color: #1A1A1D;
+  --primary-color: #0b0c10;
   --secondary-color: #66FCF1;
 }
 
@@ -184,8 +184,8 @@ html, body{
 
 .home svg{
   position: absolute;
-  top: 1px;
-  left: 50%;
+  top: -18px;
+  left: 45%;
   margin: 6%;
   margin-right: 7%;
 }
@@ -196,7 +196,7 @@ html, body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 45%;
+  margin-right: 49%;
   margin-top: 6%;
 }
 
@@ -244,7 +244,7 @@ html, body{
 .social-media{
   display: flex;
   justify-content: space-between;
-  margin-right: 45%;
+  margin-right: 49%;
   margin-top: 3%;
 }
 
@@ -488,6 +488,10 @@ html, body{
 }
 
 /* ========================== SVG ANIMATIONS ======================*/
+#Vector{
+  fill: var(--primary-color);
+}
+
 #Vector2{
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 1));
 }
