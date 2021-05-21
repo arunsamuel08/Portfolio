@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("../fonts/stylesheet.css");
 :root{
   --primary-color: #0b0c10;
   --secondary-color: #66FCF1;
@@ -174,12 +175,14 @@ html, body{
 /* =================== HOME PAGE ============================== */
 .home{
   position: relative;
+  font-family: 'Calibre';
   width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 170px;
 }
 
 .home_title{
@@ -187,20 +190,34 @@ html, body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-right: 49%;
-  margin-top: 6%;
+  align-items: flex-start;
+}
+
+.home_title h6{
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  margin-left: 8px;
 }
 
 .home_title h2{
   color: #fff;
-  padding: 10px;
+  padding: 0;
+  margin: 0;
+  font-size: 170px;
+  margin-top: -40px;
 }
 
 .home_title span{
   color: var(--secondary-color);
-  font-size: larger;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Cursor */
@@ -209,6 +226,9 @@ html, body{
 }
 
 /* Button */
+.btn-cont{
+  width: 150px;
+}
 .btn {
   cursor: pointer;
   color: #fff;
@@ -219,10 +239,10 @@ html, body{
   text-decoration: none;
   text-align: center;
   background-color: var(--primary-color);
-  border-radius: 40px;
   box-shadow: 0 0 1px 1px var(--secondary-color);
-  padding: 6px 15px;
+  padding: 10px 20px 5px 20px;
   transition: 0.3s;
+  margin-left: 12px;
 }
 
 .btn:hover{
@@ -231,120 +251,6 @@ html, body{
   color: var(--primary-color);
   border-color:  var(--secondary-color);
   font-weight: 500;
-}
-
-.social-media{
-  display: flex;
-  justify-content: space-between;
-  margin-right: 49%;
-  margin-top: 3%;
-}
-
-
-.card1{
-  margin: 18px;
-  height: 70px;
-  width: 55px;
-  border-radius: 7px;
-  box-shadow: 5px 5px 12.5px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  transform-style: preserve-3d;
-}
-.card1 .image{
-  padding: 5px;
-  
-}
-
-.card1 .image img{
-  height: 30px;
-  width: 30px;
-  transform: translateZ(5px);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-}
-
-.card1 .image img:hover{
-  fill: #fff;
-  height: 35px;
-  width: 35px;
-  transform: translateZ(5px);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-}
-
-.card2{
-  margin: 18px;
-  height: 70px;
-  width: 55px;
-  border-radius: 7px;
-  box-shadow: 5px 5px 12.5px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  transform-style: preserve-3d;
-}
-
-.card2 .image{
-  padding: 5px;
-  
-}
-
-.card2 .image img{
-  height: 35px;
-  width: 35px;
-  transform: translateZ(5px);
-  transition: 0.5s;
-}
-
-.card2 .image img:hover{
-  height: 40px;
-  width: 40px;
-  transform: translateZ(5px);
-}
-
-.card3{
-  margin: 18px;
-  height: 70px;
-  width: 55px;
-  border-radius: 7px;
-  box-shadow: 5px 5px 12.5px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  transform-style: preserve-3d;
-}
-
-.card3 .image{
-  padding: 5px;
-  
-}
-
-.card3 .image img{
-  height: 30px;
-  width: 30px;
-  transform: translateZ(5px);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-}
-
-.card3 .image img:hover{
-  height: 35px;
-  width: 35px;
-  transform: translateZ(5px);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* ========================== ABOUT PAGE ========================== */
@@ -520,19 +426,29 @@ html, body{
     z-index: 20;
   }
 
-  .home_title{
+  .home{
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    font-size: 30px;
-    margin: auto;
-    padding: 5px;
     justify-content: center;
-    text-align: center;
     align-items: center;
   }
 
+  .home_title h6{
+    font-size: 15px;
+  }
+
+  .home_title h2{
+    font-size: 150px;
+  }
+
+  .home_title span{
+    font-size: 20px;
+  }
+
   .btn {
-    margin: 50px;
+    border: 1px solid var(--secondary-color);
   }
   
   .menu {
@@ -575,7 +491,7 @@ html, body{
   }
 
   .menu span:nth-child(3){
-    background-color: #1A1A1D;
+    background-color: var(--primary-color);
     transform: rotate(-90deg);
     transition-delay: 0s;
   }
@@ -626,17 +542,6 @@ html, body{
   .menu .nav_links li{
     padding: 20px;
     font-size: 35px;
-  }
-
-  .home .home_title{
-    margin-top: 25%;
-    margin-bottom: 5%;
-  }
-
-  .home .social-media{
-    margin: 0;
-    padding: 0;
-    margin-bottom: 15%;
   }
 
   ::-webkit-scrollbar{
