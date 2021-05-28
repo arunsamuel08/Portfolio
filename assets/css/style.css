@@ -366,7 +366,7 @@ body {
   color: #fff;
   padding: 8px 10px;
   margin: 15%;
-  box-shadow: 0 0 2px 2px var(--secondary-color);
+  box-shadow: 0 0 1px 1px var(--secondary-color);
   transition: 0.3s;
   font-weight: 400;
 }
@@ -628,7 +628,8 @@ body {
     font-size: 17px;
     word-spacing: 2px;
     margin-top: 10%;
-    width: 170%;
+    width: 192%;
+    line-height: 25px;
     text-align: justify;
   }
 
