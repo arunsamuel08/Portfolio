@@ -1,132 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Arun's Portfolio</title>
-</head>
-<body class="--">
-
-  <!-- ====NAVIGATION BAR==== -->
-  <nav class="nav">
-    <!-- MAIN LOGO -->
-    <div class="logo">
-      <h4>PORTFOLIO</h4>
-    </div>
-
-    <!-- ======= Hamburger Menu ========-->
-    <div class="menu-wrap">
-      <div class="toggle">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Arun's Portfolio</title>
+  </head>
+  <body class="--">
+    <!-- ====NAVIGATION BAR==== -->
+    <nav class="nav">
+      <!-- MAIN LOGO -->
+      <div class="logo">
+        <h4>PORTFOLIO</h4>
       </div>
-      <div class="menu">
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul class="nav_links">
-          <li>
-            <a href=#home>Home</a>
-          </li>
-          <li>
-            <a href=#projects>Projects</a>
-          </li>
-          <li>
-            <a href=#about>About</a>
-          </li>
-          <li>
-            <a href=#contact>Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div> 
-  </nav> 
 
-  <main>
-    <!-- ====HOME PAGE==== -->
-    <section class="home" id="home">
-      <div class="home-container">
-        <div class="home_title">
-          <h6>HEY THERE!👋 I'M</h6>
-          <h2>arun</h2>
-          <span class="txt-type", data-wait="3000", data-words='["PHARMACIST", "DATA ANALYST", "WEB DEVELOPER"]'></span><br>
+      <!-- ======= Hamburger Menu ========-->
+      <div class="menu-wrap">
+        <div class="toggle">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
         </div>
-        <div class="btn-cont">
-          <a href=#about class="btn">About Me</a>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="nav_links">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- ====PROJECTS====-->
-    <section class="projects" id="projects">
-      <div class="heading">
-        <h1>PROJECTS</h1>
-      </div> 
-    </section>
-
-    <!-- ====ABOUT PAGE==== -->
-    <section class="about" id="about">
-      <div class="heading">
-        <h1>ABOUT</h1>
-      </div>
-      <div class="profile">
-        <h1>
-          <span>I'm Arun Saji Samuel,</span>
-          <span>an Undergraduate Pharmacy Student</span>
-          <span>who loves Coding!</span><hr>
-        </h1>
-        <div class="para">
-          <div class="img-btn">
-            <img src="assets/images/Photo.png" alt="Profile">
-            <a href="#">View Resume</a>
+    <main>
+      <!-- ====HOME PAGE==== -->
+      <section class="home" id="home">
+        <div class="home-container">
+          <div class="home_title">
+            <h6>HEY THERE!👋 I'M</h6>
+            <h2>arun</h2>
+            <span
+              class="txt-type"
+              ,
+              data-wait="3000"
+              ,
+              data-words='["DATA ANALYST", "WEB DEVELOPER"]'
+            ></span
+            ><br />
+            <p>BASED IN INDIA</p>
           </div>
-          <p>Hey, I'm a Pharmacy Student who has a great
-            enthusiasm for machine learning and data science. I someday wish to
-            implement the medical knowledge with the coding 
-            skills that I have gained. I'm familiar with Python 
-            and its libraries like Pandas, Seaborn, etc. 
-          </p>
-        </div> 
-      </div>
-    </section>
+          <div class="btn-cont">
+            <a href="#about" class="btn">About Me</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- ====CONTACT==== -->
-    <section class="contacts" id="contact">
-      <div class="heading">
-        <h1>CONTACT</h1>
-      </div>
-    </section>
+      <!-- ====PROJECTS====-->
+      <section class="projects" id="projects">
+        <div class="heading">
+          <h1>PROJECTS</h1>
+        </div>
+      </section>
 
-  </main>
-  
-  
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/vanilla-tilt.js"></script>
-  <script type="text/javascript">
-    VanillaTilt.init(document.querySelector(".card1"), {
-      max: 25,
-      speed: 400,
-      glare: true,
-      "max-glare": 1
-    });
+      <!-- ====ABOUT PAGE==== -->
+      <section class="about" id="about">
+        <div class="heading">
+          <h1>ABOUT</h1>
+        </div>
+        <div class="profile">
+          <h1>
+            <span>I'm Arun Saji Samuel,</span>
+            <span>an Undergraduate Pharmacy Student</span>
+            <span>who loves Coding!</span>
+            <hr />
+          </h1>
+          <div class="para">
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/arunsamuel08/"
+                target="_blank"
+                ><img src="./assets/images/linkedin-logo (2).png"
+              /></a>
+              <a href="https://github.com/arunsamuel08" target="_blank"
+                ><img src="./assets/images/github-sign.png"
+              /></a>
+              <a href="https://www.instagram.com/arun.samuel08/" target="_blank"
+                ><img src="./assets/images/instagram (3).png"
+              /></a>
+            </div>
+            <div class="img-btn">
+              <img src="assets/images/Photo.png" alt="Profile" />
+              <a href="#">View Resume</a>
+            </div>
+            <p>
+              Hey, I'm a Pharmacy Student who has a great enthusiasm for data
+              analysis and machine learning. I try to present data in the form
+              of interactive visualizations by using tools like Tableau or
+              Python libraries like Seaborn etc. I also have a knack for
+              front-end web development.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    VanillaTilt.init(document.querySelector(".card2"), {
-      max: 25,
-      speed: 400,
-      glare: true,
-      "max-glare": 1
-    });
+      <!-- ====CONTACT==== -->
+      <section class="contacts" id="contact">
+        <div class="heading">
+          <h1>CONTACT</h1>
+        </div>
+      </section>
+    </main>
 
-    VanillaTilt.init(document.querySelector(".card3"), {
-      max: 25,
-      speed: 400,
-      glare: true,
-      "max-glare": 1
-    });
-    
-  </script>
-</body>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card1"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+
+      VanillaTilt.init(document.querySelector(".card2"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+
+      VanillaTilt.init(document.querySelector(".card3"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
 </html>

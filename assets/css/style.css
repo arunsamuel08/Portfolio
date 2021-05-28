@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("../fonts/stylesheet.css");
-:root{
+:root {
   --primary-color: #0b0c10;
-  --secondary-color: #66FCF1;
+  --secondary-color: #66fcf1;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body{
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   color: black;
   background-color: var(--primary-color);
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: fit-content;
 }
 /* =============NAVIGATION BAR DESKTOP ===========================*/
 
-.nav{
+.nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,7 @@ html, body{
   z-index: 19;
 }
 
-.logo{
+.logo {
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -42,7 +43,7 @@ html, body{
   color: #fff;
 }
 
-.nav_links{
+.nav_links {
   top: 5px;
   left: 55%;
   display: flex;
@@ -54,43 +55,43 @@ html, body{
   list-style-type: none;
 }
 
-.nav_links li{
+.nav_links li {
   padding-right: 50px;
 }
 
-.nav_links li a{
+.nav_links li a {
   position: relative;
   color: #fff;
   text-decoration: none;
   font-weight: normal;
 }
 
-.nav_links li a:hover{
+.nav_links li a:hover {
   color: var(--secondary-color);
   transition: 0.5s;
 }
 
-.nav_links li a::after{
+.nav_links li a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 100%;
   height: 2px;
-  background: #66FCF1;
+  background: #66fcf1;
 
   transform: scale(0);
   transform-origin: left;
   transition: transform 250ms ease-in;
 }
 
-.nav_links li a:hover::after{
+.nav_links li a:hover::after {
   transform: scaleX(1);
 }
 
 /* =================== NAVIGATION MOBILE VIEW ========================*/
 
-.toggle{
+.toggle {
   display: none;
 }
 
@@ -105,7 +106,7 @@ html, body{
   opacity: 0;
 }
 
-.menu-wrap .hamburger{
+.menu-wrap .hamburger {
   position: absolute;
   top: 0;
   left: 83%;
@@ -119,7 +120,7 @@ html, body{
   justify-content: center;
 }
 
-.menu-wrap .hamburger > div{
+.menu-wrap .hamburger > div {
   position: relative;
   width: 100%;
   height: 2px;
@@ -131,7 +132,7 @@ html, body{
 }
 
 .menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after{
+.menu-wrap .hamburger > div::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -141,7 +142,7 @@ html, body{
   background: inherit;
 }
 
-.menu-wrap .hamburger > div::after{
+.menu-wrap .hamburger > div::after {
   top: 10px;
 }
 
@@ -152,30 +153,30 @@ html, body{
 
 /* TURN LINES INTO X */
 .menu-wrap .toggler:checked + .hamburger > div::before,
-.menu-wrap .toggler:checked + .hamburger > div::after{
+.menu-wrap .toggler:checked + .hamburger > div::after {
   top: 0;
   transform: rotate(90deg);
 }
 
 /* ROTATE ON HOVER */
-.menu-wrap .toggler:checked:hover + .hamburger > div{
+.menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
 
 /* =================== SCROLLBAR ============================== */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 9px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--secondary-color);
   border-radius: 6px;
 }
 
 /* =================== HOME PAGE ============================== */
-.home{
+.home {
   position: relative;
-  font-family: 'Calibre';
+  font-family: "Calibre";
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -185,15 +186,17 @@ html, body{
   padding-left: 170px;
 }
 
-.home_title{
+.home_title {
   font-size: 40px;
   display: flex;
+  margin-top: 40px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  height: 300px;
 }
 
-.home_title h6{
+.home_title h6 {
   color: #fff;
   font-size: 20px;
   padding: 0;
@@ -201,7 +204,7 @@ html, body{
   margin-left: 8px;
 }
 
-.home_title h2{
+.home_title h2 {
   color: #fff;
   padding: 0;
   margin: 0;
@@ -209,10 +212,10 @@ html, body{
   margin-top: -40px;
 }
 
-.home_title span{
+.home_title span {
   color: var(--secondary-color);
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: 5px;
   margin-top: -30px;
   display: flex;
@@ -225,8 +228,15 @@ html, body{
   border-right: 0.2rem solid var(--secondary-color);
 }
 
+.home_title p {
+  font-size: 15px;
+  margin-left: 11px;
+  color: #fff;
+  margin-top: -45px;
+}
+
 /* Button */
-.btn-cont{
+.btn-cont {
   width: 150px;
 }
 .btn {
@@ -242,25 +252,26 @@ html, body{
   box-shadow: 0 0 1px 1px var(--secondary-color);
   padding: 10px 20px 5px 20px;
   transition: 0.3s;
+  margin-top: 30px;
   margin-left: 12px;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--secondary-color);
   cursor: pointer;
   color: var(--primary-color);
-  border-color:  var(--secondary-color);
+  border-color: var(--secondary-color);
   font-weight: 500;
 }
 
 /* ========================== ABOUT PAGE ========================== */
-.about{
+.about {
   height: 200vh;
   display: flex;
   flex-direction: column;
 }
 
-.about .heading h1{
+.about .heading h1 {
   margin-top: 7%;
   margin-left: 10%;
   text-align: left;
@@ -268,19 +279,19 @@ html, body{
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 5px;
-  writing-mode:vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: sideways;
   transform: rotate(180deg);
 }
 
-.about .profile{
+.about .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about .profile h1{
+.about .profile h1 {
   margin-left: 9%;
   margin-bottom: -2%;
   display: flex;
@@ -292,68 +303,89 @@ html, body{
   z-index: 5;
 }
 
-.about .profile h1 span:nth-last-of-type(1){
+.about .profile h1 span:nth-last-of-type(1) {
   margin-left: 50%;
 }
 
-.about .profile hr{
+.about .profile hr {
   margin-top: 1%;
   margin-left: 50%;
   width: 50%;
 }
 
-.about .profile .para{
+.about .profile .para {
   display: flex;
   margin-left: 14%;
   width: 40%;
 }
 
-.about .profile .para p{
+.about .profile .para p {
   margin-left: 5%;
   margin-top: 19%;
   text-align: justify;
   color: #fff;
 }
 
-.about .profile .para .img-btn{
+.social {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about .profile img{
+.social img {
+  height: 32px;
+  width: auto;
+  margin-left: -100px;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+
+.social img:hover {
+  height: 34px;
+}
+
+.about .profile .para .img-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .profile .img-btn img {
   height: 240px;
   width: 220px;
-  filter: drop-shadow(0 6px 6px rgba(0,0,0,0.6));
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.6));
   z-index: 4;
 }
 
-.about .profile a{
+.about .profile .img-btn a {
   font-size: 17px;
+  font-weight: 500;
   text-decoration: none;
   color: #fff;
-  padding: 10px;
+  padding: 8px 10px;
   margin: 15%;
-  border-radius: 40px;
-  box-shadow: 0 0 5px 5px var(--secondary-color);
+  box-shadow: 0 0 2px 2px var(--secondary-color);
   transition: 0.3s;
   font-weight: 400;
 }
 
-.about .profile a:hover{
+.about .profile .img-btn a:hover {
+  font-size: 17px;
+  font-weight: 500;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   letter-spacing: 1px;
 }
 
 /* ========================= PROJECTS ============================= */
-.projects{
+.projects {
   height: 100vh;
   padding-top: 6%;
 }
 
-.projects .heading h1{
+.projects .heading h1 {
   margin-top: 7%;
   margin-left: 10%;
   text-align: left;
@@ -361,18 +393,18 @@ html, body{
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 5px;
-  writing-mode:vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: sideways;
   transform: rotate(180deg);
 }
 
 /* ========================= CONTACTS ============================= */
-.contacts{
+.contacts {
   height: 100vh;
   padding-top: 6%;
 }
 
-.contacts .heading h1{
+.contacts .heading h1 {
   margin-top: 7%;
   margin-left: 10%;
   text-align: left;
@@ -380,53 +412,51 @@ html, body{
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 5px;
-  writing-mode:vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: sideways;
   transform: rotate(180deg);
 }
 
 /* ========================== MEDIA QUERIES =======================*/
-@media(max-width: 1024px){
-  .home_title{
+@media (max-width: 1024px) {
+  .home_title {
     z-index: 5;
   }
-  .home svg{
+  .home svg {
     height: 70%;
     width: 70%;
     margin-top: 15%;
     margin-left: -10%;
     z-index: 4;
   }
-
 }
 
-
-@media(max-width: 810px){
-  svg{
+@media (max-width: 810px) {
+  svg {
     display: none;
   }
 
-  .toggle{
+  .toggle {
     display: block;
   }
 
-  .menu-wrap .toggler{
+  .menu-wrap .toggler {
     z-index: 19;
   }
 
-  .menu-wrap .hamburger{
+  .menu-wrap .hamburger {
     z-index: 18;
   }
 
   /* Changing size of logo */
-  .logo{
+  .logo {
     font-size: 20px;
     right: 20px;
     top: 3px;
     z-index: 20;
   }
 
-  .home{
+  .home {
     padding: 0;
     margin: 0;
     display: flex;
@@ -435,22 +465,22 @@ html, body{
     align-items: center;
   }
 
-  .home_title h6{
+  .home_title h6 {
     font-size: 15px;
   }
 
-  .home_title h2{
+  .home_title h2 {
     font-size: 150px;
   }
 
-  .home_title span{
+  .home_title span {
     font-size: 20px;
   }
 
   .btn {
     border: 1px solid var(--secondary-color);
   }
-  
+
   .menu {
     position: fixed;
     min-height: 100vh;
@@ -462,11 +492,11 @@ html, body{
     margin: auto;
   }
 
-  .menu.active{
+  .menu.active {
     right: 0;
   }
 
-  .menu span{
+  .menu span {
     position: absolute;
     top: 0;
     left: 0;
@@ -478,46 +508,44 @@ html, body{
     transform: rotate(-90deg);
   }
 
-  .menu span:nth-child(1){
-    background-color: #66FCF1;
+  .menu span:nth-child(1) {
+    background-color: #66fcf1;
     transform: rotate(-90deg);
     transition-delay: 0.2s;
   }
 
-  .menu span:nth-child(2){
+  .menu span:nth-child(2) {
     background-color: #45a29e;
     transform: rotate(-90deg);
     transition-delay: 0.1s;
   }
 
-  .menu span:nth-child(3){
+  .menu span:nth-child(3) {
     background-color: var(--primary-color);
     transform: rotate(-90deg);
     transition-delay: 0s;
   }
 
-  .menu.active span:nth-child(1){
+  .menu.active span:nth-child(1) {
     z-index: 1;
     transition-delay: 0s;
-    
   }
 
-  .menu.active span:nth-child(2){
+  .menu.active span:nth-child(2) {
     z-index: 2;
     transition-delay: 0.1s;
   }
 
-  .menu.active span:nth-child(3){
+  .menu.active span:nth-child(3) {
     z-index: 3;
     transition-delay: 0.2s;
-    
   }
 
-  .menu.active span{
+  .menu.active span {
     transform: rotate(0deg);
   }
 
-  .menu .nav_links{
+  .menu .nav_links {
     z-index: 100;
     transition: 0.5s;
     visibility: hidden;
@@ -533,61 +561,61 @@ html, body{
     align-items: center;
   }
 
-  .menu.active .nav_links{
+  .menu.active .nav_links {
     visibility: visible;
     opacity: 2;
     transition-delay: 0.4s;
   }
 
-  .menu .nav_links li{
+  .menu .nav_links li {
     padding: 20px;
     font-size: 35px;
   }
 
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     width: 4px;
   }
 
-  .about{
+  .about {
     padding-top: 18%;
   }
 
-  .projects{
+  .projects {
     padding-top: 18%;
   }
 
-  .contacts{
+  .contacts {
     padding-top: 18%;
   }
 
   /* ================ About mobile view =================*/
 
-  .about{
+  .about {
     height: 200vh;
     display: flex;
     flex-direction: column;
   }
-  .about .profile{
+  .about .profile {
     margin-top: 10%;
   }
 
-  .about .profile .img-btn{
+  .about .profile .img-btn {
     margin-top: 20%;
   }
 
-  .about .profile h1{
+  .about .profile h1 {
     font-size: 30px;
   }
 
-  .about .profile h1 span:nth-last-of-type(1){
+  .about .profile h1 span:nth-last-of-type(1) {
     margin-left: 0;
   }
 
-  .about .profile hr{
-   display: none;
+  .about .profile hr {
+    display: none;
   }
 
-  .about .profile .para{
+  .about .profile .para {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -595,16 +623,22 @@ html, body{
     margin: 0;
   }
 
-  .about .profile .para p{
+  .about .profile .para p {
     margin: 0;
     font-size: 17px;
     word-spacing: 2px;
     margin-top: 10%;
-    width: 180%;
-    text-align: center;
+    width: 170%;
+    text-align: justify;
   }
 
+  .social {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+  }
 
-
-
+  .social img {
+    margin: 40px;
+  }
 }
