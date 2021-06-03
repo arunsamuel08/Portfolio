@@ -158,11 +158,6 @@ body {
   transform: rotate(90deg);
 }
 
-/* ROTATE ON HOVER */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
-}
-
 /* =================== SCROLLBAR ============================== */
 ::-webkit-scrollbar {
   width: 9px;
