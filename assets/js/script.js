@@ -93,39 +93,3 @@ navlinks.addEventListener("click", () => {
 });
 
 // =========================================================================
-
-const navbar_color1 = document.querySelector(".home_nav");
-
-navbar_color1.addEventListener("click", () => {
-  navbar_color1.classList.toggle("active2");
-  navbar_color2.classList.remove("active2");
-  navbar_color3.classList.remove("active2");
-  navbar_color4.classList.remove("active2");
-});
-
-const navbar_color2 = document.querySelector(".projects_nav");
-
-navbar_color2.addEventListener("click", () => {
-  navbar_color2.classList.toggle("active2");
-  navbar_color1.classList.remove("active2");
-  navbar_color3.classList.remove("active2");
-  navbar_color4.classList.remove("active2");
-});
-
-const navbar_color3 = document.querySelector(".about_nav");
-
-navbar_color3.addEventListener("click", () => {
-  navbar_color3.classList.toggle("active2");
-  navbar_color2.classList.remove("active2");
-  navbar_color1.classList.remove("active2");
-  navbar_color4.classList.remove("active2");
-});
-
-const navbar_color4 = document.querySelector(".contact_nav");
-
-navbar_color4.addEventListener("click", () => {
-  navbar_color4.classList.toggle("active2");
-  navbar_color2.classList.remove("active2");
-  navbar_color3.classList.remove("active2");
-  navbar_color1.classList.remove("active2");
-});
