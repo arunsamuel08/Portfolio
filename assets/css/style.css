@@ -324,13 +324,12 @@ body {
 
 .contact-container {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   padding: 100px 100px;
 }
 
 .cont-left {
-  /* border: 2px solid #66fcf1; */
+  width: 50%;
 }
 
 .cont-left h2 {
@@ -349,6 +348,8 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  padding-left: 80px;
+  width: 50%;
   height: 365px;
 }
 
@@ -664,6 +665,7 @@ body {
   .cont-left {
     /* border: 2px solid #66fcf1; */
     height: 200px;
+    width: 100%;
   }
 
   .cont-left h2 {
@@ -685,6 +687,7 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     height: 50px;
+    width: 100%;
   }
 
   .cont-right .email-icon {
