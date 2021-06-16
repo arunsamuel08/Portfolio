@@ -93,3 +93,10 @@ navlinks.addEventListener("click", () => {
 });
 
 // =========================================================================
+
+window.addEventListener("scroll", () => {
+  let nav = document.querySelector("nav");
+  let windowPosition = window.scrollY > 130;
+
+  nav.classList.toggle("scrolling-active", windowPosition);
+});
