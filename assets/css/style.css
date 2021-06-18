@@ -324,52 +324,85 @@ body {
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 100px 100px;
 }
 
 .cont-left {
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-left .cont-img img {
+  height: 280px;
+  width: auto;
+  margin-top: -50px;
 }
 
 .cont-left h2 {
+  font-size: 80px;
   color: #fff;
-  font-size: 90px;
 }
 
 .cont-left h1 {
+  font-size: 120px;
   color: var(--secondary-color);
-  font-size: 160px;
-  margin-top: -30px;
+  margin-top: -15px;
 }
 
 .cont-right {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding-left: 80px;
-  width: 50%;
-  height: 365px;
+  padding: 0 15px;
 }
 
-.cont-right .email-icon {
+.email-sec {
+  height: 130px;
+  width: 33%;
   display: flex;
-  margin: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  padding-left: 30px;
 }
 
-.cont-right .email-icon img {
-  height: 35px;
-  width: auto;
-  margin-left: 5px;
-  transition: 0.2s;
+.phone-sec {
+  height: 130px;
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
-.cont-right .email-icon a {
+.location-sec {
+  height: 130px;
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.email-sec,
+.phone-sec,
+.location-sec h4 {
+  color: #fff;
+  font-size: 22px;
+}
+
+.email-sec a {
   text-decoration: none;
   color: #fff;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 18px;
+}
+
+.phone-sec h5 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.location-sec h5 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .contacts .footer {
@@ -422,9 +455,51 @@ body {
 }
 
 /* ========================== MEDIA QUERIES =======================*/
+@media (max-width: 1200px) {
+  .home_title {
+    z-index: 5;
+  }
+
+  .cont-left h2 {
+    font-size: 60px;
+  }
+
+  .cont-left h1 {
+    font-size: 100px;
+    color: var(--secondary-color);
+    margin-top: -5px;
+  }
+
+  .cont-left .cont-img img {
+    height: 250px;
+    width: auto;
+    margin-top: -50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .home_title {
     z-index: 5;
+  }
+
+  .contacts {
+    height: 50vh;
+  }
+
+  .cont-left h2 {
+    font-size: 50px;
+  }
+
+  .cont-left h1 {
+    font-size: 90px;
+    color: var(--secondary-color);
+    margin-top: -5px;
+  }
+
+  .cont-left .cont-img img {
+    height: 250px;
+    width: auto;
+    margin-top: -50px;
   }
 }
 
@@ -651,7 +726,7 @@ body {
 
   /* ============= Contacts mobile view ================ */
   .contacts {
-    height: 60vh;
+    height: 100vh;
     padding-top: 6%;
   }
 
@@ -659,47 +734,55 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10px 10px;
+    padding: 100px 10px;
+  }
+
+  .cont-left .cont-img img {
+    display: none;
   }
 
   .cont-left {
-    /* border: 2px solid #66fcf1; */
-    height: 200px;
-    width: 100%;
+    padding-left: 10px;
   }
 
   .cont-left h2 {
+    font-size: 40px;
     color: #fff;
-    font-size: 60px;
   }
 
   .cont-left h1 {
+    font-size: 60px;
     color: var(--secondary-color);
-    font-size: 90px;
-    margin-top: 0px;
-    height: 20px;
+    margin-top: 2px;
   }
 
   .cont-right {
-    /* border: 2px solid #66fcf1; */
     display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .email-sec {
+    height: 90px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 50px;
-    width: 100%;
+    padding: 0;
   }
 
-  .cont-right .email-icon {
-    display: flex;
-    margin: 10px;
+  .phone-sec {
+    height: 90px;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  .cont-right .email-icon a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
+  .location-sec {
+    height: 90px;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .contacts .footer {
