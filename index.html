@@ -74,7 +74,35 @@
 
       <!-- ====ABOUT PAGE==== -->
       <section class="about" id="about">
-        <h1 class="about-head">about.</h1>
+        <div class="about-container">
+          <div class="skills"></div>
+
+          <div class="about-me">
+            <div class="mine-img">
+              <img
+                src="assets/images/Photo.png"
+                alt="profile-pic"
+                height="250px"
+              />
+            </div>
+            <h3>Arun Saji Samuel</h3>
+            <hr />
+            <br />
+            <p>
+              Hey, I'm a Pharmacy Student who has a great enthusiasm for data
+              analysis and machine learning. I try to present data in the form
+              of interactive visualizations by using tools like Tableau or
+              Python libraries like Seaborn etc. I also have a knack for
+              front-end web development.
+            </p>
+            <br />
+            <div class="resume-btn">
+              <a href="#about" target="blank">View Resume</a>
+            </div>
+          </div>
+
+          <div class="hobbies"></div>
+        </div>
       </section>
 
       <!-- ====CONTACT==== -->
@@ -141,5 +169,30 @@
     </main>
 
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".skills"), {
+        max: 10,
+        speed: 400,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".about-me"), {
+        max: 10,
+        speed: 400,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".hobbies"), {
+        max: 10,
+        speed: 400,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".cont-img"), {
+        max: 5,
+        speed: 400,
+      });
+    </script>
   </body>
 </html>

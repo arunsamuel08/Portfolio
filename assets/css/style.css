@@ -292,14 +292,88 @@ body {
 /* ========================== ABOUT PAGE ========================== */
 .about {
   height: 100vh;
-  padding-top: 6%;
+  padding-top: 4%;
 }
 
-.about h1 {
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 120px;
-  margin-top: 20px;
-  margin-left: 150px;
+.about-container {
+  height: 100vh;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me {
+  width: 30%;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .mine-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #45a29e;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-me .mine-img img {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.about-me hr {
+  width: 70%;
+  border: 2px solid #45a29e;
+}
+
+.about-me p {
+  color: #fff;
+  width: 80%;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.about-me .resume-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid var(--secondary-color);
+  padding: 10px 15px 5px 15px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.about-me .resume-btn a:hover {
+  background-color: #45a29e;
+}
+
+.skills {
+  width: 30%;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hobbies {
+  width: 30%;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* ========================= PROJECTS ============================= */
@@ -700,15 +774,29 @@ body {
   /* ================ About mobile view =================*/
 
   .about {
-    height: 100vh;
+    height: 300vh;
     padding-top: 6%;
   }
 
-  .about h1 {
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 80px;
-    margin-top: 80px;
-    margin-left: 40px;
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .about-me {
+    width: 90%;
+    height: 80vh;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .hobbies {
+    width: 100%;
   }
 
   /* ============= Projects mobile view ================ */
