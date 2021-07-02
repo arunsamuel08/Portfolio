@@ -302,6 +302,7 @@ body {
   justify-content: space-between;
 }
 
+/* About me box */
 .about-me {
   width: 30%;
   border-radius: 40px;
@@ -356,18 +357,122 @@ body {
   padding: 10px 15px 5px 15px;
   margin-top: 10px;
   transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .about-me .resume-btn a:hover {
-  background-color: #45a29e;
+  background-color: var(--secondary-color);
+  color: #000;
 }
+
+/* Skills Section */
 
 .skills {
   width: 30%;
   border-radius: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 30px;
 }
+
+.skills h3 {
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
+.skills hr {
+  width: 80px;
+  border: 2px solid #45a29e;
+}
+
+.skills .skills-cont h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.skills .skills-cont hr {
+  border: 1px solid #fff;
+  width: 95%;
+}
+
+.skills .development button {
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 7px;
+  margin-right: 8px;
+  color: #fff;
+  background-color: #45a29e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.skills .development button img {
+  height: 12px;
+  width: auto;
+}
+
+.skills .libraries button img {
+  height: 12px;
+  width: auto;
+}
+
+.skills .development .dev2 {
+  margin-top: 10px;
+}
+
+.skills .development button:hover {
+  background-color: #318c88;
+}
+
+.skills .libraries button {
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 7px;
+  margin-right: 8px;
+  color: #fff;
+  background-color: #45a29e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.skills .libraries button:hover {
+  background-color: #318c88;
+}
+
+.skills .libraries .lib2 {
+  margin-top: 10px;
+}
+
+.skills .tools button {
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 7px;
+  margin-right: 8px;
+  color: #fff;
+  background-color: #45a29e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.skills .tools button:hover {
+  background-color: #318c88;
+}
+
+.skills .tools .tools2 {
+  margin-top: 10px;
+}
+
+/* Hobbies and experience section  */
 
 .hobbies {
   width: 30%;
@@ -774,7 +879,7 @@ body {
   /* ================ About mobile view =================*/
 
   .about {
-    height: 300vh;
+    height: 200vh;
     padding-top: 6%;
   }
 
@@ -788,11 +893,16 @@ body {
 
   .about-me {
     width: 90%;
-    height: 80vh;
+    height: 100vh;
+    order: -1;
+    padding: 40px 0;
+    margin-top: 600px;
   }
 
   .skills {
-    width: 100%;
+    width: 90%;
+    height: 100vh;
+    margin-top: 100px;
   }
 
   .hobbies {
