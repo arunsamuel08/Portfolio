@@ -69,7 +69,38 @@
 
       <!-- ====PROJECTS====-->
       <section class="projects" id="projects">
-        <h1 class="projects-head">projects.</h1>
+        <div class="project-container">
+          <div class="project-line1">
+            <div class="project1">
+              <img src="assets/images/project1.gif" alt="project1" />
+            </div>
+            <div class="project1-desc">
+              <h2>COVID VACCINE TRACKER</h2>
+              <h4><i>Front-End Developer | React</i></h4>
+              <ul>
+                <li>
+                  Worked on the Front-End development of this Web-App that
+                  <b>tracks</b> vaccine availability all over India and
+                  <b>sends notifications</b> as soon as vaccines are available
+                  in the nearest centres.
+                </li>
+              </ul>
+              <div class="proj1-btn">
+                <a
+                  href="https://github.com/NVA-21/vaccine_tracker"
+                  target="blank"
+                  ><img src="assets/images/github (2).png" alt="git"
+                /></a>
+
+                <a
+                  href="https://nva-vaccine-tracker.netlify.app/"
+                  target="blank"
+                  ><img src="assets/images/goto.png" alt="website"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ====ABOUT PAGE==== -->
@@ -289,6 +320,12 @@
     <script type="text/javascript">
       VanillaTilt.init(document.querySelector(".cont-img"), {
         max: 5,
+        speed: 400,
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".project1 img"), {
+        max: 15,
         speed: 400,
       });
     </script>

@@ -552,10 +552,62 @@ body {
 }
 
 .projects h1 {
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 120px;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.project-container {
+  padding: 50px 100px;
+}
+
+.project-line1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project1 img {
+  height: 240px;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project1-desc {
+  padding: 40px 50px;
+}
+
+.project1-desc h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.project1-desc h4 {
+  color: var(--secondary-color);
+}
+
+.project1-desc ul {
   margin-top: 20px;
-  margin-left: 150px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.project1-desc .proj1-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project1-desc a img {
+  margin: 15px;
+  height: 30px;
+  width: auto;
+  margin-right: 5px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.project1-desc a img:hover {
+  background-color: #45a29e;
 }
 
 /* ========================= CONTACTS ============================= */
@@ -984,6 +1036,27 @@ body {
     font-size: 80px;
     margin-top: 80px;
     margin-left: 40px;
+  }
+
+  .project-container {
+    padding: 100px 0;
+  }
+
+  .project-line1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project1 img {
+    height: 150px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .project1-desc {
+    padding: 40px 30px;
   }
 
   /* ============= Contacts mobile view ================ */
