@@ -872,6 +872,25 @@ body {
   }
 }
 
+@media (max-width: 1130px) {
+  .project1 img,
+  .project2 img,
+  .project3 img {
+    height: 170px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .project1-desc h2,
+  .project2-desc h2,
+  .project3-desc h2 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 1024px) {
   .home_title {
     z-index: 5;
