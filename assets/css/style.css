@@ -1226,12 +1226,13 @@ body {
 
   .project1i img {
     height: 150px;
-    width: auto;
+    width: 300px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .project1i-desc {
     padding: 40px 30px;
+    order: 1;
   }
 
   .project-line1 {
