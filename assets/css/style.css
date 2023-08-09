@@ -1217,6 +1217,23 @@ body {
     padding: 100px 0;
   }
 
+  .project-line1i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project1i img {
+    height: 150px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .project1i-desc {
+    padding: 40px 30px;
+  }
+
   .project-line1 {
     display: flex;
     flex-direction: column;
