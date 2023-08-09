@@ -563,6 +563,55 @@ body {
   padding: 50px 100px;
 }
 
+.project-line1i {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project1i img {
+  height: 260px;
+  width: 520px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project1i-desc {
+  padding: 40px 50px;
+  order: -1;
+}
+
+.project1i-desc h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.project1i-desc h4 {
+  color: var(--secondary-color);
+}
+
+.project1i-desc ul {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.project1i-desc .proj1i-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.project1i-desc a img {
+  margin: 15px;
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.project1i-desc a img:hover {
+  background-color: #45a29e;
+}
+
 .project-line1 {
   display: flex;
   justify-content: space-between;
